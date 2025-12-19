@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Klik Game - RevoFun</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+
+
+  <header class="border-b border-slate-800 bg-slate-900/80">
+    <div class="max-w-3xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-400">Klik Game</h1>
+      <a href="/milestone-2-RaafiTeam2Madrid/index.html" class="text-sm text-slate-300 hover:text-indigo-400">
+        ← Kembali
+      </a>
+    </div>
+  </header>
+
+
+  <main class="flex-1">
+    <div class="max-w-3xl mx-auto px-4 py-8 space-y-6">
+
+      
+      <section class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+        <h2 class="text-lg font-semibold mb-2">Teknis Permainan</h2>
+        <p class="text-sm text-slate-300">
+          Kalian punya waktu <b>10 detik</b>.  
+          Klik tombol sebanyak mungkin sebelum waktu habis.
+        </p>
+      </section>
+      <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center space-y-2">
+        <p>Waktu: <span id="waktu">10</span> detik</p>
+        <p>Skor: <span id="skor">0</span></p>
+        <p>High Score: <span id="nilaiTertinggi">0</span></p>
+      </section>
+
+     
+      <section class="flex justify-center gap-4">
+        <button
+          id="klikBtn"
+          class="px-6 py-3 text-lg font-bold bg-indigo-500 rounded-xl hover:bg-indigo-400 active:scale-95 transition"
+          disabled
+        >
+          KLIK!
+        </button>
+
+        <button
+          id="mulaiBtn"
+          class="px-6 py-3 text-lg font-bold bg-green-600 rounded-xl hover:bg-green-500 active:scale-95 transition"
+        >
+          MULAI
+        </button>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-900/80 text-center text-xs text-slate-500 py-3">
+    © 2025 RevoFun
+  </footer>
+
+
+  <script src="/milestone-2-RaafiTeam2Madrid/logic/klik.js"></script>
+</body>
+</html>

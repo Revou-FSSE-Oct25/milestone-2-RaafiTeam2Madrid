@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Umur Jokowi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-900/80 bagckdrop-blur">
+      <div
+        class="max-2-3xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <div>
+          <h1 class="text-2xl font-bold text-indigo-400">Tebak Umur Jokowi</h1>
+          <p class="text-xs text-slate-400">
+            Tebak Umur Jokowi, menangkan berbagai kesempatan mengelola tambang
+          </p>
+        </div>
+        <nav class="text-sm">
+          <a
+            href="/milestone-2-RaafiTeam2Madrid/index.html"
+            class="text-slate-300 hover:text-indigo-400"
+            >Kembali ke halaman utama</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1">
+      <div class="max-w-3xl mx-auto px-4 py-8 space-y-6">
+        <!-- Instruktsi -->
+        <section class="bg-slate-900/70 border-slate-800 rounded-xl p-4">
+          <h2 class="text-xl font-semibold mb-2">Instruksi</h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Sistem akan memilih satu angka untuk menebak umur jokowi dari <span
+              class="font-semibold text-indigo-300"
+              >1 sampai 100</span
+            >. <br />
+            Player punya
+            <span class="font-semibold text-indigo-300">5 kali percobaan</span>
+            untuk menebak. setiap kali nebak, kamu akan mendapat petunjuk;
+            <span class="italic">Terlalu tua</span> atau
+            <span class="italic">Terlalu muda</span>
+          </p>
+        </section>
+
+        <!-- section game -->
+        <section
+          class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 space-y-4"
+        >
+          <div>
+            <label for="tebakInput" class="block text-sm mb-1">
+              Coba tebak
+            </label>
+            <div class="flex gap-2">
+              <input
+                type="number"
+                id="tebakInput"
+                min="1"
+                max="100"
+                class="w-full rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                placeholder="Contoh: 99"
+              />
+
+              <button
+                id="tombolTebak"
+                class="px-4 py-2 text-sm font-medium rounded-lg bg-indigo-500 hover:bg-indigo-400 acive-scale-95 transition"
+              >
+                Tebak lek
+              </button>
+            </div>
+          </div>
+
+          <div class="text-sm space-y-1">
+            <p class="text-slate-200" id="pesan">
+                Game nya belom mulai. Tekan tombol nya, tebak setelah isi angla.
+            </p>
+            <p id="percobaanInfo" class="text-slate-400">
+                Kesempatan tersisa; 5
+            </p>
+          </div>
+          <button 
+          id="resetBtn"
+          class="px-4 py-2 text-xs font-medium rounded-lg bg-slate-700 hover:bg-slate-600 transition hidden">
+            Main lagi
+          </button>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+     <footer class="border-t border-slate-800 bgslate-900/80">
+        <div class="max-w-3xl mx-auto px-4 py-3 text-center text-xs text-slate-500">
+            Made by Raafi
+        </div>
+     </footer>
+
+     <!-- Javascript nya -->
+      <script src="/milestone-2-RaafiTeam2Madrid/logic/number-guess.js"></script>
+  </body>
+</html>
