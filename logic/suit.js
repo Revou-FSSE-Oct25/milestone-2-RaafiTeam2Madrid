@@ -19,10 +19,10 @@ function buatPemenangRonde(pilihanPemain, pilihanKomputer){
     switch (pilihanPemain){
         case "Batu":
         return pilihanKomputer === "Gunting" ? "Pemain" : "Komputer";
-        case "paper":
+        case "kertas":
         return pilihanKomputer === "Batu" ? "Pemain" : "Komputer";
         case "Gunting":
-        return pilihanKomputer === "Kertas" ? "Player" : "Komputer";
+        return pilihanKomputer === "Kertas" ? "Pemain" : "Komputer";
         default:
             return "seri";
     }
