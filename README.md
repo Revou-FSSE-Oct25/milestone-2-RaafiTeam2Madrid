@@ -97,16 +97,5 @@ Struktur folder project adalah sebagai berikut:
 
 ```text
 ReFun/
-│
-├── index.html           # Landing Page
-│
-├── tebak.html           # Game Tebak Umur Jokowi
-├── tebak.js
-│
-├── rps.html             # Game Suit (Rock Paper Scissors)
-├── rps.js
-│
-├── klik.html            # Clicker Game
-├── klik.js
-│
-└── README.md            # Dokumentasi Project
+├───logic
+└───pages

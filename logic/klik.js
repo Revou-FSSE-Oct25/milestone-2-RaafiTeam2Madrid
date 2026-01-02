@@ -1,3 +1,8 @@
+const skorEl = document.getElementById("skor");
+const waktuEl = document.getElementById("waktu");
+const nilaiEl = document.getElementById("nilaiTertinggi");
+const klikBtn = document.getElementById("klikBtn");
+const mulaiBtn = document.getElementById("mulaiBtn");
 
 let skor = 0;
 let waktu = 10;
@@ -6,10 +11,6 @@ let timer = null;
 let nilaiTertinggi = Number(localStorage.getItem("nilaiTertinggi") || 0);
 
 function updateDisplay() {
-  const skorEl = document.getElementById("skor");
-  const waktuEl = document.getElementById("waktu");
-  const nilaiEl = document.getElementById("nilaiTertinggi");
-
   skorEl.textContent = skor;
   waktuEl.textContent = waktu;
   nilaiEl.textContent = nilaiTertinggi;
@@ -18,9 +19,6 @@ function updateDisplay() {
 function mulai() {
   skor = 0;
   waktu = 10;
-
-  const klikBtn = document.getElementById("klikBtn");
-  const mulaiBtn = document.getElementById("mulaiBtn");
 
   klikBtn.disabled = false;
   mulaiBtn.disabled = true;
@@ -46,9 +44,6 @@ function selesaiGame() {
   clearInterval(timer);
   timer = null;
 
-  const klikBtn = document.getElementById("klikBtn");
-  const mulaiBtn = document.getElementById("mulaiBtn");
-
   klikBtn.disabled = true;
   mulaiBtn.disabled = false;
 
@@ -62,9 +57,6 @@ function selesaiGame() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const klikBtn = document.getElementById("klikBtn");
-  const mulaiBtn = document.getElementById("mulaiBtn");
-
   klikBtn.addEventListener("click", handleKlik);
   mulaiBtn.addEventListener("click", mulai);
 
